@@ -10,5 +10,6 @@ public interface TrophiesServiceI {
     TrophiesDTO getTrophieById(int idtrophie);
     List<TrophiesDTO> getTrophieByTitle(String title);
     List<TrophiesDTO> getTrophieByDescription(String description);
-    void insertTrophie(CrearTrophiesDTO trophies);    
+    void insertTrophie(CrearTrophiesDTO trophies);
+    void deleteTrophie(int id);    
 }

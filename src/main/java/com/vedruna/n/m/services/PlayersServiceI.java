@@ -11,5 +11,6 @@ public interface PlayersServiceI {
     List<PlayersDTO> getPlayerByUsername(String player);
     void insertPlayer(CrearPlayersDTO player);
     void deletePlayer(int idPlayer);
+    void giveTrophieToPlayer(int idPlayer, int idTrophie);
 
 }

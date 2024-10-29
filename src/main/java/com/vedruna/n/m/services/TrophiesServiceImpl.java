@@ -65,6 +65,11 @@ public class TrophiesServiceImpl implements TrophiesServiceI{
         newTrophie.setDescription(trophies.getDescription());
         trophiesRepo.save(newTrophie);
     }
+
+    @Override
+    public void deleteTrophie(int id) {
+        trophiesRepo.deleteById(id);
+    }
     
 }
 
